@@ -2720,6 +2720,11 @@ hr,
   -khtml-border-radius: 2px 2px 2px 2px;
   border-radius: 2px 2px 2px 2px;
 }
+
+.mainNav .navTabs > li:last-child > a {
+  padding-right: 0px;
+}
+
 .mainNav .navTabs > li .active {
   background-color: #ff6b6b;
   color: #ffffff !important;
