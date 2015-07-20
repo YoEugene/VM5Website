@@ -141,12 +141,18 @@
 
 
 .partners .partner-wrapper {
-	padding: 10px;
+	/*padding: 10px;*/
 	/*width: 24.5%;*/
+	margin-right: 17px;
 	width: 220px;
 	height: 100px;
 	display: inline-block;
 }
+
+.partners .partner-wrapper:last-child {
+	margin-right: 0px;
+}
+
 .partners .partner {
 	border: 1px solid #ccc;
 	border-radius: 3px;
