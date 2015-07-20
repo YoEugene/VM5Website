@@ -352,6 +352,10 @@
 	width: 45px;
 }
 
+.adplay .section-1 .arrow {
+	top: 60px;
+}
+
 .section-1 .item {
 	display: inline-block;
 	vertical-align: top;
