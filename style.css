@@ -1493,7 +1493,7 @@ hr,
   opacity: 1;
   line-height: 16px;
   height: 16px;
-  bottom: 20px;
+  bottom: 0px;
 }
 /*.slider:hover .owl-controls .owl-dots {
   opacity: 1;
@@ -2500,7 +2500,7 @@ hr,
 /* slider style 1 controls */
 .sliderStyle1 .owl-controls .owl-dots {
   position: absolute;
-  /*bottom: -20px;*/
+  margin-bottom: 60px;
   left: 0px;
   width: 100%;
   text-align: center;
@@ -2514,7 +2514,7 @@ hr,
 }
 .sliderStyle1:hover .owl-controls .owl-dots {
   opacity: 1;
-  bottom: 20px;
+  bottom: 0px;
 }
 .owl-controls .owl-nav {
   height: 100%;
