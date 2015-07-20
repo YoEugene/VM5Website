@@ -2635,7 +2635,7 @@ hr,
 }
 /* --- logo --------------------- */
 .logoWrapper {
-  padding-left: 35px;
+  /*padding-left: 35px;*/
   float: left;
 }
 .logo {
@@ -2691,7 +2691,7 @@ hr,
 /* --- Main Nav --------------------- */
 .mainNav {
   padding-top: 30px;
-  padding-right: 15px;
+  /*padding-right: 15px;*/
   float: right;
 }
 .mainNav .navTabs {
