@@ -479,16 +479,28 @@
 	text-align: center;
 	position: relative;
 	margin: 0 auto;
-	padding: 1px 0 80px;
+	/*padding: 1px 0 80px;*/
 }
 
 .howitwork .title {
-	margin: 80px 0;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	/*margin: 80px 0;*/
+}
+
+.howitwork .section-1 .title {
+	margin-top: 140px;
+}
+
+.howitwork .section-2 .title {
+	margin-top: 140px;
 }
 
 .howitwork .section-1 img {
 	display: block;
-	margin: 60px auto 0;
+	/*margin: 60px auto 0;*/
+	margin: 0 auto;
+	padding-top: 60px;
 }
 
 .howitwork .subtitle {
@@ -510,14 +522,24 @@
 	font-size: 18px;
 	font-weight: bolder;
 	margin-bottom: 100px;
-	margin: 10px;
+	width: 300px;
+	max-width: 300px;
+	margin-right: 17px;
 }
+.howitwork .section-2 table:last-child {
+	margin-right: 0px;
+}
+
+.howitwork .section-2 table > tbody {
+	width: 100%;
+}
+
 .howitwork .section-2 table img {
 	display: block;
 	width: 45px;
 	position: absolute;
 	top: -55px;
-	left: 15px;
+	left: 10px;
 	margin: 70px auto 0;
 }
 .howitwork .section-2 tr {
@@ -529,22 +551,25 @@
 	background-color: #FEA800;
 	height: 80px;
 	color: white;
-	padding: 0 30px 0 80px;
+	padding: 0 30px 0 70px;
 }
 .howitwork .section-2 th .desc {
-	width: 208px;
+	width: 200px;
 	display: inline-block;
 	font-weight: 600;
 }
 .howitwork .section-2 td .desc {
-	width: 238px;
+	width: 200px;
+	padding: 10px 0;
 	display: inline-block;
 	font-weight: 500;
 }
 .howitwork .section-2 td {
 	position: relative;
 	height: 120px;
-	padding: 0 20px 0 80px;
+	/*padding: 0 0 0 80px;*/
+	padding-left: 70px;
+
 }
 .howitwork .section-2 tr:nth-child(even) {
 	background-color: #F6F6F6;
