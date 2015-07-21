@@ -14,6 +14,7 @@
 .section-2 > .title {
 	margin-top: 80px;
 	margin-bottom: 80px;
+
 }
 
 /* Header Fill */
@@ -52,7 +53,8 @@
 	display: inline-block;
 	width: 24.5%;
 }
-.features .item img {
+.features .item img,
+.adplay .item img {
 	display: block;
 	position: relative;
 	margin: 0 auto;
@@ -443,8 +445,21 @@
 .adplay .section-2 .item {
 	display: inline-block;
 	vertical-align: top;
-	width: 24.5%;
+	width: 22.5%;
+	margin-right: 20px;
 }
+.adplay .section-2 .item .desc .title {
+	color: black;
+	line-height: 1;
+	margin-bottom: 30px;
+	height: 50px;
+}
+/*
+.adplay .section-2 .item .desc strong {
+	display: inline-block;
+	line-height: 2;
+	margin-bottom: 30px
+}*/
 
 .section-2 .desc {
 	font-size: 16px;
@@ -457,7 +472,7 @@
 .section-2 .item .desc ul {
 	text-align: left;
 	display: inline-block;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 }
 
 .section-2 .desc li {
@@ -1182,7 +1197,8 @@
 	.features .item {
 		width: 49.5%;
 	}
-	.features .item img{
+	.features .item img,
+	.adplay .item img{
 		width: 200px;
 		margin: 20px auto;
 	}

@@ -2722,7 +2722,7 @@ hr,
 }
 
 .mainNav .navTabs > li:last-child > a {
-  padding-right: 0px;
+  margin-right: -18px;
 }
 
 .mainNav .navTabs > li .active {

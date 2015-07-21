@@ -82,55 +82,53 @@
         <!-- Header -->
         <header class="header headerStyle1" id="header">
             <div class="sticky scrollHeaderWrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="logoWrapper">
-                            <h1 class="logo">
-                  <a class="clearfix" href="home.html">
-                    <img src="images/home/header_logo.png" alt="">
-                  </a>
-                </h1>
-                            <!-- end of logo -->
-                        </div>
-                        <!-- end of logoWrapper -->
-                        <nav class="mainMenu mainNav" id="mainNav">
-                            <ul class="navTabs">
-                                <li>
-                                    <a href="home_japanese.html">Home</a>
-                                    <!-- end of dropdown -->
-                                </li>
-                                <li>
-                                    <a class="active" href="#">産品</a>
-                                    <!-- end of dropdown -->
-                                </li>
-                                <li>
-                                    <a href="partners_japanese.html">パートナー</a>
-                                    <!-- end of dropdown -->
-                                </li>
-                                <li>
-                                    <a href="about_japanese.html">About</a>
-                                    <!-- end of dropdown -->
-                                </li>
-                                <li>
-                                    <a href="news_japanese.html">ニュース</a>
-                                    <!-- end of dropdown -->
-                                </li>
-                                <li>
-                                    <a href="https://www.wantedly.com/companies/vmfive" target="_blank">社員応募</a>
-                                    <!-- end of dropdown -->
-                                </li>
-                            </ul>
-                            <!-- end of nav tabs -->
-                        </nav>
-                        <!-- end of main nav -->
-                        <a href="#" class="generalLink" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
-                        <div class="clearfix"></div>
-                        <!-- end of clearfix -->
-                        <div class="responsiveMainNav"></div>
-                        <!-- end of responsive main nav -->
+                <div class="grid-940">
+                    <div class="logoWrapper">
+                        <h1 class="logo">
+                          <a class="clearfix" href="home.html">
+                              <img src="images/home/header_logo.png" alt="">
+                          </a>
+                        </h1>
+                        <!-- end of logo -->
                     </div>
-                    <!-- end of row -->
+                    <!-- end of logoWrapper -->
+                    <nav class="mainMenu mainNav" id="mainNav">
+                        <ul class="navTabs">
+                            <li>
+                                <a href="home_japanese.html">Home</a>
+                                <!-- end of dropdown -->
+                            </li>
+                            <li>
+                                <a class="active" href="#">産品</a>
+                                <!-- end of dropdown -->
+                            </li>
+                            <li>
+                                <a href="partners_japanese.html">パートナー</a>
+                                <!-- end of dropdown -->
+                            </li>
+                            <li>
+                                <a href="about_japanese.html">About</a>
+                                <!-- end of dropdown -->
+                            </li>
+                            <li>
+                                <a href="news_japanese.html">ニュース</a>
+                                <!-- end of dropdown -->
+                            </li>
+                            <li>
+                                <a href="https://www.wantedly.com/companies/vmfive" target="_blank">社員応募</a>
+                                <!-- end of dropdown -->
+                            </li>
+                        </ul>
+                        <!-- end of nav tabs -->
+                    </nav>
+                    <!-- end of main nav -->
+                    <a href="#" class="generalLink" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
+                    <div class="clearfix"></div>
+                    <!-- end of clearfix -->
+                    <div class="responsiveMainNav"></div>
+                    <!-- end of responsive main nav -->
                 </div>
+                    <!-- end of row -->
                 <!-- end of container -->
             </div>
             <!-- end of sticky -->
@@ -143,8 +141,11 @@
 
         <section ng-hide="{{isMobile}}" class="product section mainSection scrollAnchor graySection" id="product">
             <div class="product-wrapper">
-                <iframe id="yplayer" width="{{videoWidth}}" height="{{videoHeight}}" src="https://www.youtube.com/embed/oZjBSZmhN8I?loop=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1&amp;playlist=oZjBSZmhN8I" frameborder="0" allowfullscreen></iframe>
+                <!-- <iframe id="yplayer" width="{{videoWidth}}" height="{{videoHeight}}" src="https://www.youtube.com/embed/oZjBSZmhN8I?loop=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1&amp;playlist=oZjBSZmhN8I" frameborder="0" allowfullscreen></iframe> -->
                 <div class="unclickable"></div>
+                <video preload="auto" loop="loop" autoplay width="{{videoWidth}}" height="{{videlHeight}}" muted="true">
+                    <source src="video/adplay_demo.mov" type="video/mp4">
+                </video>
                 <!-- <div class="kv-logo-wrapper"> -->
                     <!-- <img class="kv-logo" src="images/products/adplay-logo.png" alt=""> -->
                 <!-- </div> -->
@@ -152,243 +153,262 @@
         </section>
 
         <section class="adplay section mainSection scrollAnchor lightSection" id="adplay">
-            <div class="section-1">
-                <div class="title">AdPlay</div>
-                <div class="item item-1">
-                    <img src="images/products/adplay-1.png" alt="">
-                    <div class="desc">Mobile Game App</div>
-                </div>
-                <img class="arrow" src="images/products/adplay-arrow.png" alt="">
-                <div class="item">
-                    <img src="images/products/adplay-2.png" alt="">
-                    <div class="desc">Upload to<br>VMFive Cloud Server</div>
-                </div>
-                <img class="arrow" src="images/products/adplay-arrow.png" alt="">
-                <div class="item">
-                    <img src="images/products/adplay-3.png" alt="">
-                    <div class="desc">Stream to All Kinds of Device<br> via Web (HTML5) / App (SDK)</div>
-                </div>
-            </div>
-
-            <div class="section-2">
-                <div class="title">機能</div>
-                <div class="item">
-                    <img src="images/products/feature-1.png" alt="">
-                    <div class="desc">
-                        <strong>ワンクリックでデモ</strong>
-                        <ul>
-                            <li>リアルタイムストリーミング</li>
-                            <li>インストールなし</li>
-                            <li>プラグインなし</li>
-                        </ul>
+            <div class="grid-940">
+                <div class="section-1">
+                    <div class="title">AdPlay</div>
+                    <div class="item item-1">
+                        <img src="images/products/adplay-1.png" alt="">
+                        <div class="desc">Mobile Game App</div>
                     </div>
-
-                </div>
-                <div class="item">
-                    <img src="images/products/feature-2.png" alt="">
-                    <div class="desc">
-                        <strong>クロスプラットフォーム／クロスデバイス</strong>
-                        <ul>
-                            <li>Android/iOS支援</li>
-                            <li>パソコン/タブレット/スマートフォン</li>
-                        </ul>
+                    <img class="arrow" src="images/products/adplay-arrow.png" alt="">
+                    <div class="item">
+                        <img src="images/products/adplay-2.png" alt="">
+                        <div class="desc">Upload to<br>VMFive Cloud Server</div>
                     </div>
-
-                </div>
-                <div class="item">
-                    <img src="images/products/feature-3.png" alt="">
-                    <div class="desc">
-                        <strong>アプリを広告する</strong>
-                        <ul>
-                            <li>インストールする前に体験</li>
-                            <li>良質なダウンロード</li>
-                            <li>LTVを改善する</li>
-                        </ul>
+                    <img class="arrow" src="images/products/adplay-arrow.png" alt="">
+                    <div class="item">
+                        <img src="images/products/adplay-3.png" alt="">
+                        <div class="desc">Stream to All Kinds of Device<br> via Web (HTML5) / App (SDK)</div>
                     </div>
-
                 </div>
-                <div class="item">
-                    <img src="images/products/feature-4.png" alt="">
-                    <div class="desc">
-                        <strong>通信量をマネタイズする</strong>
-                        <ul>
-                            <li>Android/iOS向けネイテｲプSDK</li>
-                            <li>WEB向けHTML5SDK</li>
-                            <li>キャンペーン ダッシュボード</li>
-                            <li>体験の回数によって広告費用を計算する</li>
-                        </ul>
-                    </div>
 
+                <div class="section-2">
+                    <div class="title">機能</div>
+                    <div class="item">
+                        <!-- <img src="images/products/feature-1.png" alt=""> -->
+                        <img src="images/home/product_features-01.svg" alt="" />
+                        <div class="desc">
+                            <div class="title">
+                                <strong>ワンクリックでデモ</strong>
+                            </div>
+                            <ul>
+                                <li>リアルタイムストリーミング</li>
+                                <li>インストールなし</li>
+                                <li>プラグインなし</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <!-- <img src="images/products/feature-2.png" alt=""> -->
+                        <img src="images/home/product_features-02.svg" alt="" />
+                        <div class="desc">
+                            <div class="title">
+                                <strong style="line-height: 0.1;">クロスプラットフォーム／クロスデバイス</strong>
+                            </div>
+                            <ul>
+                                <li>Android/iOS支援</li>
+                                <li>パソコン/タブレット/スマートフォン</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <!-- <img src="images/products/feature-3.png" alt=""> -->
+                        <img src="images/home/product_features-03.svg" alt="" />
+                        <div class="desc">
+                            <div class="title">
+                                <strong>アプリを広告する</strong>
+                            </div>
+                            <ul>
+                                <li>インストールする前に体験</li>
+                                <li>良質なダウンロード</li>
+                                <li>LTVを改善する</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <!-- <img src="images/products/feature-4.png" alt=""> -->
+                        <img src="images/home/product_features-04.svg" alt="" />
+                        <div class="desc">
+                            <div class="title">
+                                <strong>通信量をマネタイズする</strong>
+                            </div>
+                            <ul>
+                                <li>Android/iOS向けネイテｲプSDK</li>
+                                <li>WEB向けHTML5SDK</li>
+                                <li>キャンペーン ダッシュボード</li>
+                                <li>体験の回数によって広告費用を計算する</li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="benefit section mainSection scrollAnchor graySection" id="benefit">
-            <div class="title">THE BENEFITS OF AdPlay</div>
-            <div><strong>Brand New Advertising Format</strong></div>
-            <img src="images/products/benefits.png" alt="">
-
+            <div class="grid-940">
+                <div class="title">THE BENEFITS OF AdPlay</div>
+                <div><strong>Brand New Advertising Format</strong></div>
+                <img src="images/products/benefits.png" alt="">
+            </div>
         </section>
 
         <section class="howitwork section mainSection scrollAnchor" id="howitwork">
-            <div class="section-1">
-                <div class="title">HOW AdPlay WORKS</div>
-                <img src="images/products/howitwork-1.png" alt="">
-                <div class="subtitle"><strong>Game Publisher</strong></div>
-                <img src="images/products/howitwork-arrow.png" alt="">
-                <img src="images/products/howitwork-2.png" alt="">
-                <div class="subtitle"><strong>AdPlay Studio</strong></div>
-                <img src="images/products/howitwork-arrow.png" alt="">
-                <img src="images/products/howitwork-3.png" alt="">
-                <div class="subtitle"><strong>Playable Ad Unit</strong></div>
+            <div class="grid-940">
+                <div class="section-1">
+                    <div class="title">HOW AdPlay WORKS</div>
+                    <img src="images/products/howitwork-1.png" alt="">
+                    <div class="subtitle"><strong>Game Publisher</strong></div>
+                    <img src="images/products/howitwork-arrow.png" alt="">
+                    <img src="images/products/howitwork-2.png" alt="">
+                    <div class="subtitle"><strong>AdPlay Studio</strong></div>
+                    <img src="images/products/howitwork-arrow.png" alt="">
+                    <img src="images/products/howitwork-3.png" alt="">
+                    <div class="subtitle"><strong>Playable Ad Unit</strong></div>
 
-            </div>
+                </div>
 
-            <div class="section-2">
-                <div class="title">AdPlay 価値</div>
+                <div class="section-2">
+                    <div class="title">AdPlay 価値</div>
 
-                <table class="item">
-                    <tr>
-                        <th>
-                            <img src="images/products/value-icon-1.png" alt="">
-                            <div class="desc">ゲーム開発者のためのAdPlay
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/products/value-check.png" alt="">
-                            <div class="desc">写真やビデオの説明をせず、ゲームの中で最も魅力的な部分を直接実演する。
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/products/value-check.png" alt="">
-                            <div class="desc">ゲーム体験を通し、アプリに興味を持ったユーザーをさらに引き込む。
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/products/value-check.png" alt="">
-                            <div class="desc">高いLTVで高いマーケティング投資収益を実現。
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="item">
-                    <tr>
-                        <th>
-                            <img src="images/products/value-icon-2.png" alt="">
-                            <div class="desc">広告代理店／アドネットワーク／アプリストアのためのAdPlay
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/products/value-check.png" alt="">
-                            <div class="desc">モバイル広告を面白くする新しい広告形式。</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/products/value-check.png" alt="">
-                            <div class="desc">すばらしいユーザーによる体験は、タウンロード率の上昇につながる。<br><br>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/products/value-check.png" alt="">
-                            <div class="desc">クロスプラットフォーム／クロスデバイス。Android／iOS支援
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="item">
-                    <tr>
-                        <th>
-                            <img src="images/products/value-icon-3.png" alt="">
-                            <div class="desc">ゲームユーザーのためのAdPlay
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/products/value-check.png" alt="">
-                            <div class="desc">アプリ探し，ダウンロード，削除の時間や費用を浪費しない。
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/products/value-check.png" alt="">
-                            <div class="desc">スペシャル道具やレベルアップなどのゲームハイライトをあらかじめ体験する。
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/products/value-check.png" alt="">
-                            <div class="desc">ダウンロード前にアプリを即時体験。欲しいアプリを簡単に見つかる。
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+                    <table class="item">
+                        <tr>
+                            <th>
+                                <img src="images/products/value-icon-1.png" alt="">
+                                <div class="desc">ゲーム開発者のためのAdPlay
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/products/value-check.png" alt="">
+                                <div class="desc">写真やビデオの説明をせず、ゲームの中で最も魅力的な部分を直接実演する。
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/products/value-check.png" alt="">
+                                <div class="desc">ゲーム体験を通し、アプリに興味を持ったユーザーをさらに引き込む。
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/products/value-check.png" alt="">
+                                <div class="desc">高いLTVで高いマーケティング投資収益を実現。
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="item">
+                        <tr>
+                            <th>
+                                <img src="images/products/value-icon-2.png" alt="">
+                                <div class="desc">広告代理店／アドネットワーク／アプリストアのためのAdPlay
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/products/value-check.png" alt="">
+                                <div class="desc">モバイル広告を面白くする新しい広告形式。</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/products/value-check.png" alt="">
+                                <div class="desc">すばらしいユーザーによる体験は、タウンロード率の上昇につながる。<br><br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/products/value-check.png" alt="">
+                                <div class="desc">クロスプラットフォーム／クロスデバイス。Android／iOS支援
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="item">
+                        <tr>
+                            <th>
+                                <img src="images/products/value-icon-3.png" alt="">
+                                <div class="desc">ゲームユーザーのためのAdPlay
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/products/value-check.png" alt="">
+                                <div class="desc">アプリ探し，ダウンロード，削除の時間や費用を浪費しない。
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/products/value-check.png" alt="">
+                                <div class="desc">スペシャル道具やレベルアップなどのゲームハイライトをあらかじめ体験する。
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/products/value-check.png" alt="">
+                                <div class="desc">ダウンロード前にアプリを即時体験。欲しいアプリを簡単に見つかる。
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="vmfooter" id="footer">
-            <div class="topVMFooter">
-                <div class="location">
-                    <img class="icon" src="images/home/footer-location.png" alt="">
-                    <div style="margin-bottom: 10px;">106 台北市大安區<br>
-                    敦化南路二段 105 號 19 號 B 室<br>
+            <div class="grid-940">
+                <div class="topVMFooter">
+                    <div class="location">
+                        <img class="icon" src="images/home/footer-location.png" alt="">
+                        <div style="margin-bottom: 10px;">106 台北市大安區<br>
+                        敦化南路二段 105 號 19 號 B 室<br>
+                        </div>
+                        <div class="team/blank"></div>
+                        <div>
+                        B room, 19F., No.105, Sec 2,<br>
+                        Dunhua S. Rd., Da'an Dist.,<br>
+                        Taipei City 106, Taiwan
+                        </div>
                     </div>
-                    <div class="blank"></div>
-                    <div>
-                    B room, 19F., No.105, Sec 2,<br>
-                    Dunhua S. Rd., Da'an Dist.,<br>
-                    Taipei City 106, Taiwan
+                    <div class="call">
+                        <img class="icon" src="images/home/footer-call.png" alt="">
+                        <div style="display:inline-block;width:45px;margin-bottom:10px;">
+                            <strong>Tel</strong>
+                        </div>
+                        <div style="display:inline-block;">+886-2-2707-2525</div>
+                        <br>
+                        <div style="display:inline-block;width:45px;">
+                            <strong>Fax</strong>
+                        </div>
+                        <div style="display:inline-block;">+886-2-2707-2526</div>
+                    </div>
+                    <div class="mail">
+                        <img class="icon" src="images/home/footer-mail.png" alt="">
+                        <div style="display:inline-block;width:115px;margin-bottom:10px;">
+                            <strong>業務提携：</strong>
+                        </div>
+                        <div style="display:inline-block;"><a href="mailto:business@vm5.com">business@vm5.com</a></div>
+                        <br>
+                        <div style="display:inline-block;width:115px;">
+                            <strong>社員応募：</strong>
+                        </div>
+                        <div style="display:inline-block;"><a href="mailto:job@vm5.com" target="_top">job@vm5.com</a></div>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/vmfive" target="_team/blank"><img src="images/home/footer-sociallink-facebook.png" alt=""></a>
+                        <a href="https://twitter.com/VMFive" target="_team/blank"><img src="images/home/footer-sociallink-twitter.png" alt=""></a>
+                        <a href="https://www.linkedin.com/company/vmfive-international-limited" target="_team/blank"><img src="images/home/footer-sociallink-linkedin.png" alt=""></a>
+                        <a href="https://angel.co/vmfive" target="_blank"><img src="images/home/footer-social-angelist.png" alt=""></a><br>
+                        <a href="https://www.crunchbase.com/organization/vmfive
+    " target="_blank"><img src="images/home/footer-sociallink-crunchbase.png" alt=""></a>
                     </div>
                 </div>
-                <div class="call">
-                    <img class="icon" src="images/home/footer-call.png" alt="">
-                    <div style="display:inline-block;width:45px;margin-bottom:10px;">
-                        <strong>Tel</strong>
-                    </div>
-                    <div style="display:inline-block;">+886-2-2707-2525</div>
-                    <br>
-                    <div style="display:inline-block;width:45px;">
-                        <strong>Fax</strong>
-                    </div>
-                    <div style="display:inline-block;">+886-2-2707-2526</div>
+                <div class="bottomVMFooter">
+                    <div class="copyright">Copyright © 2015 VMFive. All rights reserved.</div>
+                    <div class="welcome"><strong>VMFive welcome you to <a href="http://join-vm5.weebly.com/" target="_blank">Join Us.</a></strong></div>
                 </div>
-                <div class="mail">
-                    <img class="icon" src="images/home/footer-mail.png" alt="">
-                    <div style="display:inline-block;width:115px;margin-bottom:10px;">
-                        <strong>業務提携：</strong>
-                    </div>
-                    <div style="display:inline-block;"><a href="mailto:business@vm5.com">business@vm5.com</a></div>
-                    <br>
-                    <div style="display:inline-block;width:115px;">
-                        <strong>社員応募：</strong>
-                    </div>
-                    <div style="display:inline-block;"><a href="mailto:job@vm5.com" target="_top">job@vm5.com</a></div>
-                </div>
-                <div class="social">
-                    <a href="https://www.facebook.com/vmfive" target="_blank"><img src="images/home/footer-sociallink-facebook.png" alt=""></a>
-                    <a href="https://twitter.com/VMFive" target="_blank"><img src="images/home/footer-sociallink-twitter.png" alt=""></a>
-                    <a href="https://www.linkedin.com/company/vmfive-international-limited" target="_blank"><img src="images/home/footer-sociallink-linkedin.png" alt=""></a>
-                    <a href="https://angel.co/vmfive" target="_blank"><img src="images/home/footer-social-angelist.png" alt=""></a><br>
-                    <a href="https://www.crunchbase.com/organization/vmfive
-" target="_blank"><img src="images/home/footer-sociallink-crunchbase.png" alt=""></a>
-                </div>
-            </div>
-            <div class="bottomVMFooter">
-                <div class="copyright">Copyright © 2015 VMFive. All rights reserved.</div>
-                <div class="welcome"><strong>VMFive welcome you to <a href="#" target="_blank">Join Us.</a></strong></div>
             </div>
         </footer>
         <!-- end of vmfooter section -->
