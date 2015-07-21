@@ -140,13 +140,13 @@
         <section class="headerFill hide"></section>
         <!-- end of header fill block -->
 
-        <section ng-hide="{{isMobile}}" class="product section mainSection scrollAnchor graySection" id="product">
+        <section ng-hide="{{isMobile}}" class="product section mainSection scrollAnchor" id="product">
             <div class="product-wrapper">
-                <iframe id="yplayer" width="{{videoWidth}}" height="{{videoHeight}}" src="https://www.youtube.com/embed/oZjBSZmhN8I?loop=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1&amp;playlist=oZjBSZmhN8I" frameborder="0" allowfullscreen></iframe>
+                <!-- <iframe id="yplayer" width="{{videoWidth}}" height="{{videoHeight}}" src="https://www.youtube.com/embed/oZjBSZmhN8I?loop=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1&amp;playlist=oZjBSZmhN8I" frameborder="0" allowfullscreen></iframe> -->
                 <!-- <iframe id="yplayer" src="https://www.youtube.com/embed/oZjBSZmhN8I?loop=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1&amp;playlist=oZjBSZmhN8I" frameborder="0" allowfullscreen></iframe> -->
-              <!-- <video preload="auto" loop="loop" autoplay style="width: 100%;"> -->
-                <!-- <source src="video/demo_video.mov" type="video/mp4"> -->
-              <!-- </video> -->
+                <video preload="auto" loop="loop" autoplay width="{{videoWidth}}" height="{{videlHeight}}" muted="true">
+                    <source src="video/adplay_demo.mov" type="video/mp4">
+                </video>
                 <div class="unclickable"></div>
                 <!-- <div class="kv-logo-wrapper"> -->
                 <!-- <img class="kv-logo" src="images/products/adplay-logo.png" alt=""> -->

@@ -110,7 +110,7 @@
 	/*padding: 60px 0 20px;*/
 }
 .page .partners {
-	padding: 60px 0 110px;
+	/*padding: 60px 0 110px;*/
 }
 .partners .title {
 	color: #FE8F00;
@@ -368,6 +368,7 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
+	background: transparent;
 	top: 0;
 }
 
