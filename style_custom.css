@@ -8,6 +8,7 @@
 	margin: 0 auto;
 }
 
+.section > .title,
 .grid-940 > .title,
 .section-1 > .title,
 .section-2 > .title {
@@ -613,6 +614,12 @@
 	margin: 0 auto;
 }
 
+.aboutIntro > .title,
+.aboutHistory > .title,
+.team > .title {
+	margin-bottom: 60px;
+}
+
 .aboutIntro img {
 	width: 50%;
 	vertical-align: top;
@@ -656,7 +663,8 @@
 
 .aboutHistory .left-col {
 	display: inline-block;
-	width: 20%;
+	/*wisdth: 20%;*/
+	/*margin-rsight: 15px;*/
 	vertical-align: top;
 }
 
@@ -669,7 +677,7 @@
 	display: block;
 	width: 100%;
 	border-bottom: 1px solid #fe8f00;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 .aboutHistory .event img {
@@ -683,6 +691,7 @@
 	font-weight: 500;
 	font-size: 16px;
 	color: #fe8f00;
+	margin-bottom: 10px
 }
 
 .aboutHistory .event .desc {
@@ -690,12 +699,13 @@
 	font-family: 'Avenir Next', 'Open Sans', 'Tahoma', 'Arial', sans-serif;
 	font-size: 16px;
 	line-height: 19px;
-	padding: 5px 0 0 20px;
+	/*padding: 5px 0 0 20px;*/
 }
 
 .aboutHistory .event li{
 	list-style: disc;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+	margin-left: 20px;
 }
 
 /**/
@@ -746,7 +756,7 @@
 }
 
 .aboutHistory .event-1 {
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 }
 
 .aboutHistory .event-2 {
@@ -768,7 +778,10 @@
 .aboutHistory .rocket {
 	display: block;
 	position: relative;
-	margin: 30px auto 120px;
+	/*margin: 30px auto 120px;*/
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-bottom: 80px;
 }
 
 /* Team */
@@ -785,29 +798,36 @@
 }
 
 .team .section {
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 
 .team .section .title {
 	text-align: left;
-	margin: 15px 0;
-	padding-left: 10px;
+	/*margin: 15px 0;*/
+	margin-bottom: 20px;
+	/*padding-left: 10px;*/
 }
 
 .team .separate {
 	width: 80px;
 	height: 5px;
-	margin: 0 0 30px 10px;
+	/*margin: 0 0 30px 10px;*/
+	margin-bottom: 30px;
 	background-color: #fe9f00;
 }
 
 .team .card {
 	width: 24.5%;
 	display: inline-block;
-	padding: 10px;
+	/*padding: 10px;*/
+	margin-right: 20px;
 	text-align: center;
 	margin-bottom: 15px;
 	vertical-align: bottom;
+}
+
+.team .card:last-child {
+	margin-right: 0;
 }
 
 .team .card img {
