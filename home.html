@@ -109,7 +109,7 @@
                                 <li><a href="https://angel.co/vmfive" target="_blank"><img src="images/home/footer-social-angelist.png" alt=""></a></li>
                                 <li><a href="https://www.crunchbase.com/organization/vmfive" target="blank"><img src="images/home/footer-sociallink-crunchbase.png" alt=""></a></li>
                                 <li class="lang">
-                                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value;">
+                                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
                                         <option disabled="disabled" value="NoSeclect">Language</option>
                                         <option value="home.html" selected="selected">English</option>
                                         <option value="home_japanese.html">日本語</option>
@@ -208,7 +208,7 @@
                     <nav class="mainMenu mainNav" id="mainNav">
                         <ul class="navTabs">
                             <li>
-                                <a class="active" href="home.html">Home</a>
+                                <a class="active" href="#">Home</a>
                                 <!-- end of dropdown -->
                             </li>
                             <li>

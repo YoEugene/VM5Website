@@ -56,7 +56,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-resource.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.min.js"></script>
     <script src="js/lang-detect.js"></script>
-    
+
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -109,7 +109,7 @@
                             <li><a href="https://www.crunchbase.com/organization/vmfive" target="blank"><img src="images/home/footer-sociallink-crunchbase.png" alt=""></a></li>
                             <li class="lang">
                                 <form method="POST" class="langForm">
-                                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value;">
+                                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
                                         <option disabled="disabled" value="NoSeclect">Language</option>
                                         <option value="home.html">English</option>
                                         <option value="home_japanese.html" selected="selected">日本語</option>
