@@ -2452,10 +2452,10 @@ hr,
   -moz-animation-name: fadeInLeft;
   -o-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .slider .owl-item.active .captions .links a.details {
   -webkit-animation-name: fadeInLeft;
