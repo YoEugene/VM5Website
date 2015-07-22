@@ -179,7 +179,7 @@ This file includes all cusomized javascript and all plugins libraries options
   jQuery(document).ready(function() {
 
     var owl = jQuery(".homeSlider_2");
-
+    
     owl.owlCarousel({
       animateOut: 'fadeOut',
       items:1,
