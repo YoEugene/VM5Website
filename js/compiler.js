@@ -315,8 +315,11 @@ all java scritpts compiler
     filter: [ 'width', 'items', 'settings' ],
     run: function() {
       var rtl = (this.settings.rtl ? 1 : -1),
-        width = (this.width() / this.settings.items).toFixed(3),
+        width = ($(window).width() / this.settings.items).toFixed(3),
         coordinate = 0, merge, i, n;
+        console.log($(window).width());
+        console.log(this.settings.items);
+        console.log(width);
 
       this._coordinates = [];
       for (i = 0, n = this._clones.length + this._items.length; i < n; i++) {
@@ -330,7 +333,7 @@ all java scritpts compiler
   }, {
     filter: [ 'width', 'items', 'settings' ],
     run: function() {
-      var i, n, width = (this.width() / this.settings.items).toFixed(3), css = {
+      var i, n, width = ($(window).width() / this.settings.items).toFixed(3), css = {
         'width': Math.abs(this._coordinates[this._coordinates.length - 1]) + this.settings.stagePadding * 2,
         'padding-left': this.settings.stagePadding || '',
         'padding-right': this.settings.stagePadding || ''
@@ -366,7 +369,7 @@ all java scritpts compiler
       var rtl = this.settings.rtl ? 1 : -1,
         padding = this.settings.stagePadding * 2,
         begin = this.coordinates(this.current()) + padding,
-        end = begin + this.width() * rtl,
+        end = begin + $(window).width() * rtl,
         inner, outer, matches = [], i, n;
 
       for (i = 0, n = this._coordinates.length; i < n; i++) {
@@ -741,7 +744,7 @@ all java scritpts compiler
     this.drag.offsetY = this.$stage.position().top;
 
     if (this.settings.rtl) {
-      this.drag.offsetX = this.$stage.position().left + this.$stage.width() - this.width()
+      this.drag.offsetX = this.$stage.position().left + this.$stage.width() - $(window).width()
         + this.settings.margin;
     }
 
@@ -958,7 +961,7 @@ all java scritpts compiler
    * @return {Number} - The absolute position of the closest item.
    */
   Owl.prototype.closest = function(coordinate) {
-    var position = -1, pull = 30, width = this.width(), coordinates = this.coordinates();
+    var position = -1, pull = 30, width = $(window).width(), coordinates = this.coordinates();
 
     if (!this.settings.freeDrag) {
       // check closest item
@@ -996,6 +999,8 @@ all java scritpts compiler
 
     if (this.support3d) {
       this.$stage.css({
+        '-webkit-transform': 'translate3d(' + coordinate + 'px,0px,0px)',
+        '-webkit-transition': (this.speed() / 1000) + 's',
         transform: 'translate3d(' + coordinate + 'px' + ',0px, 0px)',
         transition: (this.speed() / 1000) + 's'
       });
@@ -1243,7 +1248,7 @@ all java scritpts compiler
 
     if (this.settings.center) {
       coordinate = this._coordinates[position];
-      coordinate += (this.width() - coordinate + (this._coordinates[position - 1] || 0)) / 2 * (this.settings.rtl ? -1 : 1);
+      coordinate += ($(window).width() - coordinate + (this._coordinates[position - 1] || 0)) / 2 * (this.settings.rtl ? -1 : 1);
     } else {
       coordinate = this._coordinates[position - 1] || 0;
     }
