@@ -1460,10 +1460,10 @@ hr,
   line-height: 1.5;
 }
 .slider .item img {
-  /*width: 100%;*/
+  width: 100%;
   display: block;
   margin: 0 auto;
-  /*height: auto;*/
+  height: auto;
 
 }
 .slider #kv-logo-2 {

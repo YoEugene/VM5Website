@@ -178,30 +178,30 @@ This file includes all cusomized javascript and all plugins libraries options
   //-- homeSlider_2 --
   jQuery(document).ready(function() {
 
-    var owl = jQuery(".homeSlider_2");
-
-    owl.owlCarousel({
-      animateOut: 'fadeOut',
-      items:1,
-      margin:0,
-      loop:true,
-      autoplay:true,
-      autoplayTimeout:8000,
-      autoplayHoverPause:false,
-      nav: true,
-      dots : true,
-      responsive:{
-          0:{
-              items:1
-          },
-          768:{
-              items:1
-          },
-          1000:{
-              items:1
-          }
-        }
-    });
+    // var owl = jQuery(".homeSlider_2");
+    //
+    // owl.owlCarousel({
+    //   animateOut: 'fadeOut',
+    //   items:1,
+    //   margin:0,
+    //   loop:true,
+    //   autoplay:true,
+    //   autoplayTimeout:8000,
+    //   autoplayHoverPause:false,
+    //   nav: true,
+    //   dots : true,
+    //   responsive:{
+    //       0:{
+    //           items:1
+    //       },
+    //       768:{
+    //           items:1
+    //       },
+    //       1000:{
+    //           items:1
+    //       }
+    //     }
+    // });
   });
   //--------------------------------------------------------------------------------------------
 
