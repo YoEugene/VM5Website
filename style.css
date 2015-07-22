@@ -225,11 +225,15 @@ body {
 }
 /* --- typography --------------------- */
 
-@font-face {
+/*@font-face {
   font-family: 'Avenir Next';
   src: url(fonts/Avenir-Next.ttc);
-}
+}*/
 
+@font-face {
+  font-family: 'Avenir Next';
+  src: url(fonts/AvenirNext-Bold.ttf);
+}
 
 /*headings*/
 h1,
@@ -1459,6 +1463,8 @@ hr,
   /*width: 100%;*/
   display: block;
   margin: 0 auto;
+  /*height: auto;*/
+
 }
 .slider #kv-logo-2 {
   width: 300px;
@@ -2432,6 +2438,7 @@ hr,
 /* slider style 1 animation */
 .owl-item.active .captions h2,
 .owl-item.active .captions p,
+.owl-item.active .captions img,
 .owl-item.active .captions .links,
 .owl-item.active .captions .links a,
 .owl-item.active .captions .slideContents.slideContents.animated.col-md-6 {
@@ -2447,6 +2454,18 @@ hr,
   -o-animation-delay: 1s;
   animation-delay: 1s;
 }
+
+.owl-item.active .captions img {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
 .owl-item.active .captions p {
   -webkit-animation-name: fadeInLeft;
   -moz-animation-name: fadeInLeft;

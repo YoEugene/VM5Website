@@ -1,7 +1,7 @@
 /*
 
-◄------------------------------------------------------------► 
-This file includes all cusomized javascript and all plugins libraries options 
+◄------------------------------------------------------------►
+This file includes all cusomized javascript and all plugins libraries options
 ◄------------------------------------------------------------►
 
 */
@@ -25,7 +25,7 @@ This file includes all cusomized javascript and all plugins libraries options
 
   //-- Customizing some elements css according to windows size --
   var jQuerywindow = jQuery(window);
-  
+
   jQuerywindow.resize(function(){
     //-- fixed heights for some slider elements --
     var kvHeight = $(window).height();
@@ -40,8 +40,8 @@ This file includes all cusomized javascript and all plugins libraries options
   var jQueryloadingContainer = jQuery('.loadingContainer');
 
   jQueryloadingContainer.resize(function(){
-    jQuery('.loadingContainer').css({ 
-      'margin-left' : - jQueryloadingContainer.width() / 2 , 
+    jQuery('.loadingContainer').css({
+      'margin-left' : - jQueryloadingContainer.width() / 2 ,
       'margin-top' : - jQueryloadingContainer.height()  / 2
     });
   });
@@ -54,9 +54,9 @@ This file includes all cusomized javascript and all plugins libraries options
   var jQueryheaderTop = jQueryheader.offset().top;
 
   jQuery('.offset').height( jQueryheader.outerHeight() )
-  
+
   //-- Window Scroll Functions --
-   
+
   jQuery(window).scroll(function(){
     (jQuery(window).scrollTop() > jQueryheaderTop) ? jQuery('.header').addClass('fixedHeader') && jQuery('.headerFill').addClass('show').removeClass('hide') : jQuery('.header').removeClass('fixedHeader') && jQuery('.headerFill').addClass('hide').removeClass('show');
   });
@@ -134,7 +134,7 @@ This file includes all cusomized javascript and all plugins libraries options
   //--------------------------------------------------------------------------------------------
 
 
-  //-- Language filter (facny select) -- 
+  //-- Language filter (facny select) --
   jQuery(document).ready(function() {
     jQuery('#language').fancySelect();
   });
@@ -226,9 +226,9 @@ This file includes all cusomized javascript and all plugins libraries options
         }
       }
     });
-  });  
+  });
   //--------------------------------------------------------------------------------------------
-  
+
 
 
   //-- carousel --
@@ -394,7 +394,7 @@ This file includes all cusomized javascript and all plugins libraries options
       dots : true,
       loop:true,
       autoplay : true,
-      items : 3, 
+      items : 3,
       responsive:{
         0:{
             items:1,
@@ -425,7 +425,7 @@ This file includes all cusomized javascript and all plugins libraries options
       dots : false,
       loop:true,
       autoplay : false,
-      items : 1, 
+      items : 1,
       responsive:{
         0:{
             items:1
@@ -452,7 +452,7 @@ This file includes all cusomized javascript and all plugins libraries options
       dots : true,
       loop:true,
       autoplay : true,
-      items : 1, 
+      items : 1,
       responsive:{
         0:{
             items:1
@@ -481,7 +481,7 @@ This file includes all cusomized javascript and all plugins libraries options
       animateIn: 'fadeOutUp',
       autoplay:true,
       loop:true,
-      items : 1, 
+      items : 1,
       responsive:{
         0:{
             items:1
@@ -506,19 +506,19 @@ This file includes all cusomized javascript and all plugins libraries options
       if(jQuery(this).parent().has("div")) {
         e.preventDefault();
       }
-      
+
       if(!jQuery(this).hasClass("activeLine")) {
         // hide any open menus and remove all other classes
         jQuery("#accordianShortCode .accordionRow > a").removeClass("activeLine");
         jQuery("#accordianShortCode .accordionRow > .accordion-content").removeClass("opened");
         jQuery("#accordianShortCode .accordionRow > .accordion-content").slideUp(500);
-        
+
         // open our new menu and add the activeLine class
         jQuery(this).addClass("activeLine");
         jQuery("#accordianShortCode .accordionRow > .accordion-content").addClass("opened");
         jQuery(this).next(".accordion-content").slideDown(500);
       }
-      
+
       else if(jQuery(this).hasClass("activeLine")) {
         jQuery(this).removeClass("activeLine");
         jQuery("#accordianShortCode .accordionRow > .accordion-content").removeClass("opened");
@@ -534,19 +534,19 @@ This file includes all cusomized javascript and all plugins libraries options
       if(jQuery(this).parent().has("div")) {
         e.preventDefault();
       }
-      
+
       if(!jQuery(this).hasClass("activeLine")) {
         // hide any open menus and remove all other classes
         jQuery("#accordianShortCode2 .accordionRow > a").removeClass("activeLine");
         jQuery("#accordianShortCode2 .accordionRow > .accordion-content").removeClass("opened");
         jQuery("#accordianShortCode2 .accordionRow > .accordion-content").slideUp(500);
-        
+
         // open our new menu and add the activeLine class
         jQuery(this).addClass("activeLine");
         jQuery("#accordianShortCode2 .accordionRow > .accordion-content").addClass("opened");
         jQuery(this).next(".accordion-content").slideDown(500);
       }
-      
+
       else if(jQuery(this).hasClass("activeLine")) {
         jQuery(this).removeClass("activeLine");
         jQuery("#accordianShortCode2 .accordionRow > .accordion-content").removeClass("opened");
@@ -561,12 +561,12 @@ This file includes all cusomized javascript and all plugins libraries options
 
   //-- comment --
   jQuery(document).ready(function() {
-    
+
     var watermark = 'Comment';
-    
+
     //init, set watermark text and class
     jQuery('#commentArea').val(watermark).addClass('inputBar');
-    
+
     //if blur and no value inside, set watermark text and class again.
     jQuery('#commentArea').blur(function(){
         if (jQuery(this).val().length == 0){
@@ -586,12 +586,12 @@ This file includes all cusomized javascript and all plugins libraries options
 
   //-- message --
   jQuery(document).ready(function() {
-    
+
     var watermark = 'Message';
-    
+
     //init, set watermark text and class
     jQuery('#messageArea').val(watermark).addClass('inputBar');
-    
+
     //if blur and no value inside, set watermark text and class again.
     jQuery('#messageArea').blur(function(){
         if (jQuery(this).val().length == 0){
@@ -712,7 +712,7 @@ This file includes all cusomized javascript and all plugins libraries options
       "<a href='#' class='back-to-top'>"+
         "<i class='fa fa-chevron-up'></i>"+
       "</a>"
-    );    
+    );
   });
   //-- scroll to top --
   jQuery(document).ready(function() {
@@ -725,7 +725,7 @@ This file includes all cusomized javascript and all plugins libraries options
             jQuery('.back-to-top').removeClass('fadeInup');
         }
     });
-    
+
     jQuery('.back-to-top').click(function(e) {
         e.stopPropagation();
         jQuery('body,html').animate({
@@ -740,7 +740,7 @@ This file includes all cusomized javascript and all plugins libraries options
 
 
   /* ◄------ Scroll Animation -------------------------------► */
-  
+
   //-- Progressbar --
   jQuery(document).scroll(function() {
     jQuery('.progress-bar').each(function(){
@@ -803,7 +803,7 @@ This file includes all cusomized javascript and all plugins libraries options
 
 
   /* ◄------ Responsive Nav -------------------------------► */
- 
+
   jQuery(document).ready(function () {
 
     //-- Including the main nav contents in responsive main nav DIV --
@@ -817,11 +817,11 @@ This file includes all cusomized javascript and all plugins libraries options
 
 
       if ( jQuery('#responsiveMainNavToggler i').hasClass('fa-bars') )
-      {   
+      {
           jQuery('#responsiveMainNavToggler i').removeClass('fa-bars');
           jQuery('#responsiveMainNavToggler i').addClass('fa-close');
       }else
-      {  
+      {
           jQuery('#responsiveMainNavToggler i').removeClass('fa-close');
           jQuery('#responsiveMainNavToggler i').addClass('fa-bars');
       }
@@ -838,17 +838,17 @@ This file includes all cusomized javascript and all plugins libraries options
       if(jQuery(this).parent().has("ul")) {
         e.preventDefault();
       }
-      
+
       if(!jQuery(this).hasClass("activeLine")) {
         // hide any open menus and remove all other classes
         jQuery(".responsiveMainNav .navTabs > li > .toggleResponsive").removeClass("activeLine");
         jQuery(".responsiveMainNav .navTabs > li > .dropDown").slideUp(500);
-        
+
         // open our new menu and add the activeLine class
         jQuery(this).addClass("activeLine");
         jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown").slideDown(500);
       }
-      
+
       else if(jQuery(this).hasClass("activeLine")) {
         jQuery(this).removeClass("activeLine");
         jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown").slideUp(500);
@@ -872,12 +872,12 @@ This file includes all cusomized javascript and all plugins libraries options
         // hide any open menus and remove all other classes
         jQuery(".responsiveMainNav .navTabs > li > .dropDown > li > .toggleResponsive").removeClass("activeLine");
         jQuery(".responsiveMainNav .navTabs > li > .dropDown li .dropDown").slideUp(500);
-        
+
         // open our new menu and add the activeLine class
         jQuery(this).addClass("activeLine");
         jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown li .dropDown").slideDown(500);
       }
-      
+
       else if(jQuery(this).hasClass("activeLine")) {
         jQuery(this).removeClass("activeLine");
         jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown li .dropDown").slideUp(500);
@@ -920,20 +920,20 @@ This file includes all cusomized javascript and all plugins libraries options
       jQuery('.wrapper-2').addClass('hide');
       jQuery('#partner-4-desc').removeClass('hide');
     });
-    
+
 
     var intro_h = jQuery("#intro").position().top;
     var awards_h = jQuery("#awards").position().top;
     var $frame = jQuery('iframe#vimeoIntro');
     var $frame2 = jQuery('iframe#productVideo');
     var vidsrc = $frame.attr('src');
-    $frame.attr('src','https://player.vimeo.com/video/120444515?title=0&amp;portrait=0&amp;byline=0'); 
+    $frame.attr('src','https://player.vimeo.com/video/120444515?title=0&amp;portrait=0&amp;byline=0');
 
     jQuery(document).on('scroll', function(){
       if (jQuery(document).scrollTop() + 300 > intro_h) {
 
         // sets it back to the correct link so that it reloads immediately on the next window open
-        
+
         $frame.attr('src', vidsrc+'&amp;autoplay=1;');
 
         // $frame.find('.headers').attr('display', 'none');
@@ -944,9 +944,8 @@ This file includes all cusomized javascript and all plugins libraries options
 
     });
 
-    
+
 
   });
 
 })();//end of use strict
-    
