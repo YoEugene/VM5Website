@@ -7,6 +7,7 @@
   // console.log(pathname.length);
   if(!window.location.search){
     switch (lang.toLowerCase()) {
+      case "ja":
       case "ja-jp":
         if(pathname.length < 2 || (pathname.length > 1 && pathname[1] !== "japanese"))
           window.location.href = "home_japanese.html";
